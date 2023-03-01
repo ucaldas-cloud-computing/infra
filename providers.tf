@@ -1,4 +1,4 @@
 provider "google" {
-  project     = "ucaldas-cloud-computing"
+  project     = var.project
   region      = "us-west2"
 }
