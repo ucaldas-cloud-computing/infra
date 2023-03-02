@@ -8,6 +8,8 @@ resource "google_compute_instance" "default" {
   machine_type = "e2-medium"
   zone         = "us-west2-a"
 
+  tags = ["http-server"]
+
   boot_disk {
     initialize_params {
       image = "debian-cloud/debian-11"
