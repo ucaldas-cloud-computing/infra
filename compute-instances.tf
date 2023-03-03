@@ -1,6 +1,6 @@
 locals {
     metadata_startup_script = <<-EOF
-        "echo hi testing" > /test.txt
+        # https://docs.docker.com/engine/install/debian/
         sudo apt-get update
         sudo apt-get install -y \
             ca-certificates \
@@ -14,6 +14,7 @@ locals {
         $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
         sudo apt-get update
         sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+        sudo docker run -d --name nginx -p 80:80 nginx
         EOF
 }
 
