@@ -4,4 +4,3 @@ module "Santiago-granada" {
     name = "Santiago-granada"
     metadata_startup_script = local.metadata_startup_script
 }
-
