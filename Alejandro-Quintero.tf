@@ -1,6 +1,6 @@
-module "Alejandro-Quintero" {
+module "alejandro-quintero" {
     source = "./modules/compute-instance"
 
-    name = "Alejandro-Quintero"
+    name = "alejandro-quintero"
     metadata_startup_script = local.metadata_startup_script
 }
