@@ -1,4 +1,4 @@
-module "cristian-castro" {
+module "jimena-cardenas" {
     source = "./modules/compute-instance"
 
     name = "jimena-cardenas"
